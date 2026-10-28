@@ -1,0 +1,15 @@
+# Core (CPU reference implementation)
+torch>=2.2
+safetensors>=0.4
+
+# Qwen3 tokenizer + checkpoint download for the graft
+transformers>=4.51     # Qwen3 support landed in 4.51
+huggingface-hub>=0.23
+
+# Dev
+pytest>=7
+
+# --- GPU only (not installed by default; replaces the pure-PyTorch scan) ---
+# mamba-ssm>=2.2.2
+# causal-conv1d>=1.4
+# flash-attn>=2.6
